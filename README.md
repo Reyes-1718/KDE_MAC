@@ -12,6 +12,14 @@ sudo pacman -S plasma-meta kde-applications sddm
 sudo systemctl enable sddm
 ```
 
+## Dependencias del tema
+
+Instala el tema de iconos Papirus y Kvantum (motor de estilos que usa el tema `Utterly-Nord`):
+
+```bash
+sudo pacman -S papirus-icon-theme kvantum
+```
+
 ## Actualiza el sistema
 
 ```bash
@@ -28,7 +36,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-El script copia automáticamente las carpetas `.config`, `.icons`, `.local` y `.var` a tu directorio home, fusionando el contenido con lo que ya exista sin eliminar tus archivos actuales.
+El script copia las carpetas `.config`, `.icons` y `.local` a tu directorio home, fusionando el contenido con lo que ya exista. Antes de sobrescribir un archivo, guarda una copia en `~/.kde_mac-backup-FECHA`, así que puedes volver atrás restaurándola. También copia el tema SDDM a `/usr/share/sddm/themes/` (pide `sudo`).
 
 Después de ejecutar el script, **reinicia tu sesión** para aplicar todos los cambios.
 

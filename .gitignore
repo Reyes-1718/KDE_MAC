@@ -1,0 +1,41 @@
+# Estado y datos personales que KDE genera en cada equipo: no versionar.
+
+# Certificados y claves (NSS)
+.local/share/pki/
+
+# Historial de actividades / archivos recientes
+.local/share/kactivitymanagerd/
+
+# Estado de aplicaciones, audio (wireplumber), telemetría
+.local/state/
+.config/KDE/UserFeedback.conf
+UserFeedback.*
+
+# Configuración de monitores (específica del hardware)
+.config/kwinoutputconfig.json
+.config/kscreen/
+
+# Sesiones, historiales y logs
+.config/session/
+.local/share/kate/
+.local/share/sddm/
+.local/share/recently-used.xbel
+.config/QtProject.conf
+.config/konsolesshconfig
+.config/kconf_updaterc
+*.log
+
+# Registro de KDE Store (rutas absolutas del equipo original)
+.local/share/knewstuff3/
+
+# Flatpak (generado automáticamente)
+.local/share/flatpak/
+.var/
+
+# Iconos Papirus: se instalan con pacman (papirus-icon-theme)
+.local/share/icons/Papirus*/
+
+# Credenciales
+.local/share/kwalletd/
+.ssh/
+.gnupg/
